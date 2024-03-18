@@ -19,13 +19,13 @@ exports.helloWorld = onRequest((request, response) => {
 });
 
 exports.NoamDayOne = onRequest((request, response) => {
-	response.send("1!");
+	response.send("48 61 61 63 68 69 6D 20 63 61 62 69 6E 65 74");
 });
 
 exports.NoamDayTwo = onRequest((request, response) => {
-	response.send("2!");
+	response.send("Nice try :)");
 });
 
 exports.NoamDayThree = onRequest((request, response) => {
-	response.send("3!");
+	response.send("You wish :)");
 });
