@@ -8,24 +8,18 @@
  */
 
 const { onRequest } = require("firebase-functions/v2/https");
-const logger = require("firebase-functions/logger");
 
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
-exports.helloWorld = onRequest((request, response) => {
-	logger.info("Hello logs!", { structuredData: true });
-	response.send("Hello from Firebase!");
-});
-
-exports.NoamDayOne = onRequest((request, response) => {
+exports.noam_day_one = onRequest((request, response) => {
 	response.send("48 61 61 63 68 69 6D 20 63 61 62 69 6E 65 74");
 });
 
-exports.NoamDayTwo = onRequest((request, response) => {
+exports.noam_day_two = onRequest((request, response) => {
 	response.send("Nice try :)");
 });
 
-exports.NoamDayThree = onRequest((request, response) => {
+exports.noam_day_three = onRequest((request, response) => {
 	response.send("You wish :)");
 });
