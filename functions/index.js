@@ -10,15 +10,17 @@
 const { onRequest } = require("firebase-functions/v2/https");
 
 exports.noam_day_one = onRequest((request, response) => {
-	const now = new Date().valueOf();
+	// const now = new Date().valueOf();
 
-	if (now > dayThreeUnlockDate.valueOf()) {
-		response.setHeader("G", "G");
-		response.setHeader("B", "B");
-		response.setHeader("D", "D");
-	}
+	// if (now > dayThreeUnlockDate.valueOf()) {
+	// 	response.setHeader("G", "G");
+	// 	response.setHeader("B", "B");
+	// 	response.setHeader("D", "D");
+	// }
 
-	response.send("48 61 61 63 68 69 6D 20 63 61 62 69 6E 65 74");
+	response.send(
+		"Ofir ruined the fun... but if you manage to solve the riddle, he'll reveal the secret to you!"
+	);
 });
 
 const dayTwoPasswordParam = "password";
